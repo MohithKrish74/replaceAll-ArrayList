@@ -1,0 +1,43 @@
+package com.company;
+
+import com.sun.jdi.Value;
+
+import java.util.*;
+
+public class Main
+{
+    public static void main(String[] args)
+    {
+        ArrayList<Integer> list1=new ArrayList<Integer>();
+        System.out.print("Enter the size of the list1: ");
+        Scanner in =new Scanner(System.in);
+        int size=in.nextInt();
+        System.out.println("Enter the elements: ");
+        for(int i=0;i<size;i++)
+        {
+            list1.add(in.nextInt());
+        }
+        System.out.println("User Entered list is  "+list1);
+        System.out.print("Enter the element to be multiplied: ");
+        int element=in.nextInt();
+        list1.replaceAll(e->e*element);
+        System.out.println("List after multiplied by "+element+" is  "+list1);
+
+
+
+
+
+
+    }
+
+
+
+
+}
+
+
+
+
+
+
+
